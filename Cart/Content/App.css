@@ -1,0 +1,32 @@
+﻿.navbar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* logo on left, tabs on right */
+    padding: 15px 30px;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* This makes the tabs horizontal */
+    gap: 20px; /* Space between tabs */
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links li {
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+        .nav-links li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+    .nav-links .active {
+        background-color: rgba(255, 255, 255, 0.3);
+        font-weight: bold;
+    }
